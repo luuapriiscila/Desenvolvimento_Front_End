@@ -1,0 +1,64 @@
+//mostra texto na tela
+console.log("Hello World");
+
+//coloca a informação em cima e bloqueia tudo
+alert("Olá,tudo bem?");
+
+
+const nome = "Luanna";
+let idade = 20;
+let altura = 1.62;
+let aprovada = true;
+let matricula = null;
+
+//interpolação
+console.log(`Nome: ${nome}, Idade: ${idade}, Altura: ${altura}`);
+
+//concatenação
+console.log("Nome: " + nome +", Idade: " + idade " , Altura: " + altura);
+
+//diferentes
+console.log(10+5);
+console.log("10+5");
+console.log("10"+"5");
+
+//operações
+let a= 5;
+let b=2;
+
+console.log(a+b);
+console.log(a-b);
+console.log(a*b);
+console.log(a/b);
+console.log(a%b);
+console.log(a**b);
+
+//media
+let nota1= 8;
+let nota2= 6;
+
+let media = (nota1 + nota2) /2;
+
+console.log("A média é: " + media);
+
+
+let Nome = prompt("Qual é o seu nome:");
+
+alert("Olá, "+ Nome + "!");
+
+
+//Estilo de variáveis
+camel case porDoSol
+pascal case PorDoSol
+snake case por_do_sol
+screaming snake case POR_DO_SOL
+kebab case pôr-do-sol (não é aceito no js)
+
+
+let nota1= Number(prompt("Digite a primeira nota"));
+let nota2= Number(prompt("Digite a segunda nota"));
+let nota3= Number(prompt("Digite a terceira nota"));
+
+let media = (nota1+nota2+nota3)/3;
+
+alert("Sua média é:" + media);
