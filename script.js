@@ -51,3 +51,56 @@ console.log(alunos);
 
 alunos.pop(); // retira o último
 console.log(alunos);
+
+alunos.shift(); // remove o primeiro
+console.log(alunos);
+
+alunos.unshift("Gabriela"); //acrescenta no primeiro 
+console.log(alunos);
+
+alunos.splice(1,2); //remover de acordo com a posição e quantidade
+console.log(alunos);
+
+let posicao = alunos.indexOf("Luanna"); // encontrar posição
+console.log(posicao);
+
+let alunos = ["Matias","Alvani","Daniel","Luanna","Maurício"];
+
+for(let i=0; i < alunos.length; i++){
+    console.log(alunos[i]);
+}
+
+for(let aluno of alunos){
+    console.log(aluno);
+}
+
+let aluno = {
+    nome: "Maurício",
+    idade: 24, 
+    curso: "CCP"
+};
+
+console.log(aluno.nome);
+console.log(aluno.idade);
+console.log(aluno.curso);
+
+let produto = {
+    nome: "Notebook",
+    preco: 3800,
+    estoque: 10
+};
+
+produto.preco = 3200;
+
+console.log(produto.nome);
+console.log(produto.preco);
+
+let alunos = [
+    {nome: "Gabriel", nota: 8},
+    {nome: "Alvani", nota: 7},
+    {nome: "Matias", nota: 1.3}
+];
+
+for(let aluno of alunos){
+    console.log(aluno.nome + ": " + aluno.nota);
+}
