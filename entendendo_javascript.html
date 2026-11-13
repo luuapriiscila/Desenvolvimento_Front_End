@@ -87,5 +87,48 @@
 
         }
     </script>
+
+        <h1> Calculadora </h1>
+    <input type="number" id="n1" placeholder="Primeiro número">
+    <select id="operador">
+        <option value="+">Somar</option>
+        <option value="-">Subtração</option>
+        <option value="*">Multiplicação</option>
+        <option value="/">Divisão</option>
+    </select>
+    <input type="number" id="n2" placeholder="Segundo número">
+    <button onclick="calcular()">Enviar</button>
+    <p id="resultado"></p>
+    <script>
+        function calcular(){
+            let n1 = document.getElementById("n1").value;
+            let n2 = document.getElementById("n2").value;
+            let operador = document.getElementById("operador").value;
+            let resultado;
+
+            switch(operador){
+                case "+":
+                    resultado = n1 + n2;
+                    break;
+                case "-":
+                    resultado = n1 - n2;
+                    break;
+                    case "*":
+                    resultado = n1 * n2;
+                    break;
+                    case "/":
+                        if(n2===0){
+                            resultado = "Não é possível dividir por zero";
+                    }else{
+                        resultado = n1/n2;
+                    }
+                        break;
+                    
+                    
+                
+              }
+              document.getElementById("resultado").textContent = "Resultado: " + resultado;
+        }
+            
 </body>
 </html>
